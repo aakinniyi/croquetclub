@@ -1,0 +1,23 @@
+<%=provide(:title, "#{@event.eventname}")%>
+
+<p>
+  <strong>Event Name:</strong>
+  <%= @event.eventname %>
+</p>
+
+<p>
+  <strong>Event Date:</strong>
+  <%= @event.eventdate %>
+</p>
+
+<p>
+  <strong>Event Description:</strong>
+  <%= @event.eventdescription %>
+</p>
+
+<p>
+  <strong>Event Price:</strong>
+  £ <%= @event.eventprice %>
+</p>
+
+<%= link_to 'Back', events_path %>

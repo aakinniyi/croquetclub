@@ -1,0 +1,30 @@
+<%=provide(:title, "Book Lawn")%>
+
+<h1>Listing booklawns</h1>
+
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>Availability</th>
+      <th>Lawnname</th>
+      <th>Starttime</th>
+      <th>Endtime</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @booklawns.each do |booklawn| %>
+      <tr>
+        <% book_id="bk#{booklawn.id}"%>
+        <td id=<%= book_id%> class="checked"><%= booklawn.availability %></td>
+        <td><%= booklawn.lawnname %></td>
+        <td><%= booklawn.starttime %></td>
+        <td><%= booklawn.endtime %></td>
+        <td><%= link_to 'Change', edit_booklawn_path(booklawn) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>

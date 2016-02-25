@@ -1,0 +1,2 @@
+module HowToJoinHelper
+end

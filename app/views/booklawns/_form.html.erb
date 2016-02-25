@@ -1,0 +1,33 @@
+<%= form_for(@booklawn) do |f| %>
+  <% if @booklawn.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@booklawn.errors.count, "error") %> prohibited this booklawn from being saved:</h2>
+
+      <ul>
+      <% @booklawn.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :availability %><br>
+    <%= f.select :availability, options_for_select([['Booked', 'Booked']]) %>
+  </div>
+  <div class="field">
+    <%= f.label :lawnname %><br>
+    <%= f.text_field :lawnname, :disabled => true %>
+  </div>
+  <div class="field">
+    <%= f.label :starttime %><br>
+    <%= f.datetime_select :starttime, :disabled => true %>
+  </div>
+  <div class="field">
+    <%= f.label :endtime %><br>
+    <%= f.datetime_select :endtime, :disabled => true %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

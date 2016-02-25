@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  eventname: MyString
+  eventdate: 2014-11-19 16:41:41
+  eventdescription: MyText
+  eventprice: 9.99
+  eventimage: MyString
+
+two:
+  eventname: MyString
+  eventdate: 2014-11-19 16:41:41
+  eventdescription: MyText
+  eventprice: 9.99
+  eventimage: MyString

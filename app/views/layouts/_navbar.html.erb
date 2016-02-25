@@ -1,0 +1,38 @@
+<nav>
+<ul>
+	<li class="<%= 'active' if current_page?(root_path) %>"><%= link_to "Home", root_path %></li>
+	<li class="<%= 'active' if current_page?(about_path)%>"><%= link_to "About Us", about_path %></li>
+	<li class="<%= 'active' if current_page?(how_to_join_path)%>"><%= link_to "How to Join", how_to_join_path %></li>
+	<li class="<%= 'active' if current_page?(get_started_path)%>"><%= link_to "Get Started", get_started_path %></li>
+	<li class="<%= 'active' if current_page?(newsletters_path)%>"><%= link_to "Newsletters", newsletters_path %></li>
+	<li class="<%= 'active' if current_page?(events_path)%>"><%= link_to "#{Time.now.year} Programme", events_path %></li>
+	<li class="<%= 'active' if current_page?(booklawns_path)%>"><%= link_to "Book Lawn", booklawns_path %></li>
+	<li class="<%= 'active' if current_page?(club_matters_path)%>"><%= link_to "Club Matters", club_matters_path %></li>
+	<li class="<%= 'active' if current_page?(get_in_touch_path)%>"><%= link_to "Contact us", get_in_touch_path %></li>
+	<li><%= link_to "Related Links" %>
+		<ul>
+			<li><%= link_to "The Croquet Association" %>
+				<ul>
+					<li><a href="http://www.croquet.org.uk/" target="_blank">CA Home Page</a></li>
+					<li><a href="http://www.croquet.org.uk/tournament/" target="_blank">CA Events</a></li>
+				</ul>
+			</li>
+			<li><a href="http://www.southeastcroquet.org.uk/" target="_blank">SECF</a></li>
+			<li><a href="http://www.thecroquetacademy.com/" target="_blank">Croquet Academy</a></li>
+			<li><%= link_to "Croquet Equipments" %>
+				<ul>
+					<li><a href="http://www.oxfordcroquet.com/equip/" target="_blank">Mallets, etc.</a></li>
+					<li><a href="http://www.bowlsdirect.com/contact.htm" target="_blank">Whites</a></li>
+				</ul>
+			</li>
+			<li><a href="http://cornwall-croquet.org.uk/croquet_glossary.htm" target="_blank">Croquet Glossary</a></li>
+			<li><%= link_to "Croquet Rules" %>
+				<ul>
+					<li><a href="http://www.croquet.org.uk/association/laws.html" target="_blank">Association Rules</a></li>
+					<li><a href="http://www.croquet.org.uk/golf/laws/contents.htm" target="_blank">Golf Rules</a></li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+</ul>
+</nav>

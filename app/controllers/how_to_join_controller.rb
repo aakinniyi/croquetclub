@@ -1,0 +1,2 @@
+class HowToJoinController < ApplicationController
+end

@@ -1,0 +1,29 @@
+// Place all the styles related to the newsletters controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+//styling newsletter table
+
+.table-striped {
+width:80%;
+margin:0 auto;
+border-collapse:collapse;
+
+td, th {
+font-size:1.2em;
+border: 1px solid #415f00;
+padding: 5px 7px 5px 7px; }
+
+th {
+font-size: 1.5em;
+text-align: left;
+padding-top: 0.5em;
+padding-bottom: 0.5em;
+background-color: #75ab00;
+color: #ffffff; }
+
+tr:hover {
+background-color: #e3eecc;
+border: 1px solid #415f00;}
+
+}

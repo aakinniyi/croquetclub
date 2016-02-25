@@ -1,0 +1,20 @@
+<%=provide(:title, "Newsletters")%>
+
+<table class="table-striped">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>News Date</th>
+      <th>Download Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @newsletters.each do |newsletter| %>
+      <tr>
+        <td><%= newsletter.name %></td>
+        <td><%= newsletter.newsdate %></td>
+        <td><%= link_to "Download #{newsletter.name}", newsletter.attachment_url %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

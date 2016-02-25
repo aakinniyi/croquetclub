@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  availability: MyString
+  lawnname: MyString
+  starttime: 2014-12-11 13:42:40
+  endtime: 2014-12-11 13:42:40
+
+two:
+  availability: MyString
+  lawnname: MyString
+  starttime: 2014-12-11 13:42:40
+  endtime: 2014-12-11 13:42:40

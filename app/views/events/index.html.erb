@@ -1,0 +1,16 @@
+<%=provide(:title, "Events")%>
+
+<h1> <%= Time.now.year %> Programmes</h1>
+
+<section>
+  <% @events.each do |event| %>
+  <article id="eventsection">
+    <h3><%= event.eventname %></h3>
+    <strong><%= event.eventdate %></strong> | <%= link_to 'View Event', event %> <br>
+    <p class="eventdescription"><%= event.eventdescription %></p>
+    <!-- &#58; = :, &pound; = £ -->
+    <h4>Event Fee&#58; &pound;<%= event.eventprice %></h4>
+
+  </article>
+  <% end %>
+</section>
